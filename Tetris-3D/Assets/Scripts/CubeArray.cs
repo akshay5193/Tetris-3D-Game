@@ -92,7 +92,7 @@ public class CubeArray : MonoBehaviour {
                     cube.transform.position += Vector3.down;
                 }
             }
-          //  gameObject.GetComponent<ManageAudio>().PlayFullLine();    **************************
+            gameObject.GetComponent<AudioController>().PlayFullLine();    
 
             for (int j = 0; j < isFullLine.Count; j++)
             {

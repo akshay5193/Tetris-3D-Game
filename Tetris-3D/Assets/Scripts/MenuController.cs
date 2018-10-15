@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour {
 
-    public GameObject startButton, window, windowPause, pauseBtn;
+    public GameObject startButton, window, windowPause, pauseBtn, conWindow;
 
     // Use this for initialization
     void Awake()
@@ -45,5 +45,15 @@ public class MenuController : MonoBehaviour {
         pauseBtn.GetComponent<Button>().interactable = true;
         Time.timeScale = 1F;
         windowPause.SetActive(false);
+    }
+
+    public void OnClickControls()
+    {
+        conWindow.SetActive(true);
+    }
+
+    public void OnClickX()
+    {
+        conWindow.SetActive(false);
     }
 }

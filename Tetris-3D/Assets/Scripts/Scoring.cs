@@ -16,14 +16,14 @@ public class Scoring : MonoBehaviour {
         points = 0;
         setNewSpeed();
     }
-    //Speed increasement found at http://www.colinfahey.com/tetris/tetris.html 5.10 
+
+    //Link - http://www.colinfahey.com/tetris/tetris.html
     public void setNewSpeed()
     {
         gameObject.GetComponent<Movement>().timestep = ((10 - level) * 0.05F);
     }
 
-    //Scoring system found at http://tetris.wikia.com/wiki/Scoring
-    //TODO: add double tetris
+    //Link - http://tetris.wikia.com/wiki/Scoring
     public void addPointsForLines(int lines)
     {
         if (lines > 0)

@@ -75,7 +75,7 @@ public class Movement : MonoBehaviour {
             if (!cA.updateArrayBool())
             {
                 actualGroup.transform.position -= pos;
-             //   gameObject.GetComponent<ManageAudio>().playCantMove();        *****************
+                gameObject.GetComponent<AudioController>().playCantMove();      
                 if (pos == Vector3.down)
                 {
                     spawnNew();

@@ -32,7 +32,7 @@ public class Rotation : MonoBehaviour {
         if (!back && !cA.updateArrayBool())
         {
             rotateRight(true);
-        //    GameObject.Find("Main Camera").GetComponent<ManageAudio>().playCantMove();    ***************
+            GameObject.Find("Main Camera").GetComponent<AudioController>().playCantMove();
         }
     }
 
@@ -44,7 +44,7 @@ public class Rotation : MonoBehaviour {
         if (!back && !cA.updateArrayBool())
         {
             rotateLeft(true);
-        //    GameObject.Find("Main Camera").GetComponent<ManageAudio>().playCantMove();        *****************
+            GameObject.Find("Main Camera").GetComponent<AudioController>().playCantMove();
         }
     }
 
