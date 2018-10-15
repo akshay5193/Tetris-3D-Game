@@ -17,7 +17,7 @@ public class CubeArray : MonoBehaviour {
         updateArrayBool();
     }
 
-    //Update the cube array and return false if there is any intersection between two cubes
+    //Update the cube array and return false if there is any intersection between two shapes
     public bool updateArrayBool()
     {
         isCube = new bool[14, 22];
