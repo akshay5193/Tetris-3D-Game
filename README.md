@@ -5,11 +5,11 @@ This game was made in Unity 2018.2.11f1
 Please try to open the project using the same version or there might be some missing prefabs in the heirarchy that needs to be reimported.
 
 GAME CONTROLS:
-S - Move downwards faster
-A - Move one block to the LEFT
-D - Move one block to the RIGHR
-L - Rotate 90 degrees to the Left
-R - Rotate 90 degrees to the Right
+- S - Move downwards faster
+- A - Move one block to the LEFT
+- D - Move one block to the RIGHR
+- L - Rotate 90 degrees to the Left
+- R - Rotate 90 degrees to the Right
 
 
 GAME LOGIC:
