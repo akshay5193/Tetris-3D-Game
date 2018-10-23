@@ -15,7 +15,6 @@ public class Movement : MonoBehaviour {
     //The actual group which can rotate and will move down
     public GameObject actualGroup;
 
-
     void Start()
     {
         cA = gameObject.GetComponent<CubeArray>();
@@ -36,10 +35,70 @@ public class Movement : MonoBehaviour {
             move(Vector3.down);
         }
 
-        checkForInput();
+        
+       // GetBoostKey();
+        //Use this while building the application for Windows Platform (.exe)
+        /*  checkForInput();    */
     }
 
-    void checkForInput()
+    public void GetInputKey (int x)
+    {
+        if (x == 0)
+        {
+            Debug.Log("Rotated RIGHT");
+            actualGroup.GetComponent<Rotation>().rotateRight(false);
+            cA.updateArrayBool();
+        }
+        else if (x == 1)
+        {
+            Debug.Log("Rotated LEFT");
+            actualGroup.GetComponent<Rotation>().rotateLeft(false);
+            cA.updateArrayBool();
+        }
+        else if (x == 2)
+        {
+            move(Vector3.left);
+        }
+        else if (x == 3)
+        {
+            move(Vector3.right);
+        }
+
+     /*   else if (x == 4)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Debug.Log("Speeding Downwards");
+                timestep = 0.05F;
+                cA.updateArrayBool()
+            }
+
+            else if (Input.GetMouseButtonUp(0))
+            {
+                gameObject.GetComponent<Scoring>().setNewSpeed();
+                cA.updateArrayBool()
+            }
+        }   */
+        
+    }
+
+ /*  public void GetBoostKey()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("Speeding Downwards");
+            timestep = 0.05F;
+        }
+
+        else if (Input.GetMouseButtonUp(0))
+        {
+            gameObject.GetComponent<Scoring>().setNewSpeed();
+        }
+
+        cA.updateArrayBool();
+    }       */
+
+/*    void checkForInput()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -66,7 +125,7 @@ public class Movement : MonoBehaviour {
             gameObject.GetComponent<Scoring>().setNewSpeed();
         }
         cA.updateArrayBool();
-    }
+    }      */
 
     void move(Vector3 pos)
     {
