@@ -35,6 +35,7 @@ public class Movement : MonoBehaviour {
             time = 0;
             move(Vector3.down);
         }
+
         checkForInput();
     }
 
