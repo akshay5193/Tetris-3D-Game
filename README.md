@@ -1,4 +1,4 @@
-# Tetris3D-Samsung-TTTinterview
+# Tetris 3D Game
 3D Tetris game made in Unity
 
 This game was made in Unity 2018.2.11f1
